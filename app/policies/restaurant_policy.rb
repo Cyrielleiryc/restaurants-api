@@ -9,4 +9,9 @@ class RestaurantPolicy < ApplicationPolicy
   def show?
     true
   end
+
+  def update?
+    # only restaurant's owner can update it
+    record.user == user
+  end
 end
