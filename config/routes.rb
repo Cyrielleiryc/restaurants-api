@@ -9,4 +9,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      resources :restaurants, only: %i[index show]
+    end
+  end
 end
