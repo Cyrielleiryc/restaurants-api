@@ -47,6 +47,8 @@ gem "bootsnap", require: false
 gem "bootstrap", "~> 5.2"
 gem "devise"
 gem 'pundit'
+gem 'simple_token_authentication'
+
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
